@@ -1,0 +1,53 @@
+---
+title: "unemployment rate regression"
+author: "Bowen"
+date: "09/06/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+small rural with removing outline
+```{r}
+# load data
+new_rural_small_rm <- read.csv('sb_merged_unemployment_rate_rm_rural_new.csv')
+
+# linear regression model
+
+unemployment_model2 <- lm(unemployment_rate ~ Percent.of.profitable.businesses*Total.number.of.businesses + Total.equity + Debt.to.equity.ratio..times., data= new_rural_small_rm)
+summary(unemployment_model2)
+
+```
+small rural with removing outline
+```{r}
+# load data
+new_rural_small_rm <- read.csv('sb_merged_unemployment_rate_rm_rural_new.csv')
+
+# linear regression model
+
+unemployment_model2 <- lm(unemployment_rate ~ Percent.of.profitable.businesses*Total.number.of.businesses , data= new_rural_small_rm)
+summary(unemployment_model2)
+
+```
+small urban without removing outliers
+```{r}
+# load data
+new_urban_small <- read.csv('sb_merged_unemployment_rate_urban_new.csv')
+
+# linear regression model
+
+unemployment_model3 <- lm(unemployment_rate ~ Percent.of.profitable.businesses*Total.number.of.businesses + Total.equity + Debt.to.equity.ratio..times., data= new_urban_small)
+summary(unemployment_model3)
+```
+```{r}
+# load data
+new_urban_small <- read.csv('sb_merged_unemployment_rate_urban_new.csv')
+
+# linear regression model
+
+unemployment_model3 <- lm(unemployment_rate ~ Percent.of.profitable.businesses + Debt.to.equity.ratio..times., data= new_urban_small)
+summary(unemployment_model3)
+```

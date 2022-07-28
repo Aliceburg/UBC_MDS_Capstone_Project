@@ -1,0 +1,632 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0415.1144                               -->
+<workbook original-version='18.1' source-build='2022.1.1 (20221.22.0415.1144)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet1 (ratio_mb)' inline='true' name='federated.16vnfn119usy1f1eh0rvo1pb4f4w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ratio_mb' name='excel-direct.1nwnmw40s4nmcj0zp0nwh09hds2n'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/yilinsun/Desktop/block6/capstone-project-RCBP_StatsCan/src/notebooks/ratio_mb.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1nwnmw40s4nmcj0zp0nwh09hds2n' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:M103:no:A1:M103:0' header='yes' outcome='2'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='ID' ordinal='1' />
+            <column datatype='string' name='North_American_Industry_Classification_System,_NAICS_-_code' ordinal='2' />
+            <column datatype='string' name='North_American_Industry_Classification_System,_NAICS' ordinal='3' />
+            <column datatype='integer' name='Geography_-_code' ordinal='4' />
+            <column datatype='string' name='Geography' ordinal='5' />
+            <column datatype='integer' name='Location_indicator_-_code' ordinal='6' />
+            <column datatype='string' name='Location_indicator' ordinal='7' />
+            <column datatype='integer' name='Incorporation_status_-_code' ordinal='8' />
+            <column datatype='string' name='Incorporation_status' ordinal='9' />
+            <column datatype='integer' name='Reference_year' ordinal='10' />
+            <column datatype='real' name='Debt_to_equity_ratio_(times)' ordinal='11' />
+            <column datatype='real' name='Current_debt_to_equity_(%)' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1nwnmw40s4nmcj0zp0nwh09hds2n' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:M103:no:A1:M103:0' header='yes' outcome='2'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='ID' ordinal='1' />
+            <column datatype='string' name='North_American_Industry_Classification_System,_NAICS_-_code' ordinal='2' />
+            <column datatype='string' name='North_American_Industry_Classification_System,_NAICS' ordinal='3' />
+            <column datatype='integer' name='Geography_-_code' ordinal='4' />
+            <column datatype='string' name='Geography' ordinal='5' />
+            <column datatype='integer' name='Location_indicator_-_code' ordinal='6' />
+            <column datatype='string' name='Location_indicator' ordinal='7' />
+            <column datatype='integer' name='Incorporation_status_-_code' ordinal='8' />
+            <column datatype='string' name='Incorporation_status' ordinal='9' />
+            <column datatype='integer' name='Reference_year' ordinal='10' />
+            <column datatype='real' name='Debt_to_equity_ratio_(times)' ordinal='11' />
+            <column datatype='real' name='Current_debt_to_equity_(%)' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M103:no:A1:M103:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>North_American_Industry_Classification_System,_NAICS_-_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[North_American_Industry_Classification_System,_NAICS_-_code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>North_American_Industry_Classification_System,_NAICS_-_code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>North_American_Industry_Classification_System,_NAICS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[North_American_Industry_Classification_System,_NAICS]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>North_American_Industry_Classification_System,_NAICS</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geography_-_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Geography_-_code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Geography_-_code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geography</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Geography]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Geography</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location_indicator_-_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Location_indicator_-_code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Location_indicator_-_code</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location_indicator</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location_indicator]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Location_indicator</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incorporation_status_-_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Incorporation_status_-_code]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Incorporation_status_-_code</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incorporation_status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Incorporation_status]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Incorporation_status</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reference_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Reference_year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Reference_year</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Debt_to_equity_ratio_(times)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Debt_to_equity_ratio_(times)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Debt_to_equity_ratio_(times)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current_debt_to_equity_(%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Current_debt_to_equity_(%)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Current_debt_to_equity_(%)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Current debt to equity (%)' datatype='real' name='[Current_debt_to_equity_(%)]' role='measure' type='quantitative' />
+      <column caption='Debt to equity ratio (times)' datatype='real' name='[Debt_to_equity_ratio_(times)]' role='measure' type='quantitative' />
+      <column caption='Geography - code' datatype='integer' name='[Geography_-_code]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='Incorporation status' datatype='string' name='[Incorporation_status]' role='dimension' type='nominal' />
+      <column caption='Incorporation status - code' datatype='integer' name='[Incorporation_status_-_code]' role='dimension' type='ordinal' />
+      <column caption='Location indicator' datatype='string' name='[Location_indicator]' role='dimension' type='nominal' />
+      <column caption='Location indicator - code' datatype='integer' name='[Location_indicator_-_code]' role='dimension' type='ordinal' />
+      <column caption='North American Industry Classification System, NAICS' datatype='string' name='[North_American_Industry_Classification_System,_NAICS]' role='dimension' type='nominal' />
+      <column caption='North American Industry Classification System, NAICS - code' datatype='string' name='[North_American_Industry_Classification_System,_NAICS_-_code]' role='dimension' type='nominal' />
+      <column caption='Reference year' datatype='integer' name='[Reference_year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C]' role='measure' type='quantitative' />
+      <column-instance column='[North_American_Industry_Classification_System,_NAICS]' derivation='None' name='[none:North_American_Industry_Classification_System,_NAICS:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:North_American_Industry_Classification_System,_NAICS:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Management of companies and enterprises&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Accommodation and food services&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Construction&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Professional, scientific and technical services&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Manufacturing&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Educational services&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Administrative and support, waste management and remediation services&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Wholesale trade&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Health care and social assistance&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Real estate and rental and leasing&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Retail trade&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mining, quarrying, and oil and gas extraction&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Information and cultural industries&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Agriculture, forestry, fishing and hunting&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Utilities&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Other services (except public administration)&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Arts, entertainment and recreation&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_CBB3C60DB351464A8CA4C80F48BADF0C'>
+            <properties context=''>
+              <relation connection='excel-direct.1nwnmw40s4nmcj0zp0nwh09hds2n' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:M103:no:A1:M103:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='ID' ordinal='1' />
+                  <column datatype='string' name='North_American_Industry_Classification_System,_NAICS_-_code' ordinal='2' />
+                  <column datatype='string' name='North_American_Industry_Classification_System,_NAICS' ordinal='3' />
+                  <column datatype='integer' name='Geography_-_code' ordinal='4' />
+                  <column datatype='string' name='Geography' ordinal='5' />
+                  <column datatype='integer' name='Location_indicator_-_code' ordinal='6' />
+                  <column datatype='string' name='Location_indicator' ordinal='7' />
+                  <column datatype='integer' name='Incorporation_status_-_code' ordinal='8' />
+                  <column datatype='string' name='Incorporation_status' ordinal='9' />
+                  <column datatype='integer' name='Reference_year' ordinal='10' />
+                  <column datatype='real' name='Debt_to_equity_ratio_(times)' ordinal='11' />
+                  <column datatype='real' name='Current_debt_to_equity_(%)' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (ratio_mb)' name='federated.16vnfn119usy1f1eh0rvo1pb4f4w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16vnfn119usy1f1eh0rvo1pb4f4w'>
+            <column caption='Current debt to equity (%)' datatype='real' name='[Current_debt_to_equity_(%)]' role='measure' type='quantitative' />
+            <column caption='Debt to equity ratio (times)' datatype='real' name='[Debt_to_equity_ratio_(times)]' role='measure' type='quantitative' />
+            <column caption='Location indicator' datatype='string' name='[Location_indicator]' role='dimension' type='nominal' />
+            <column caption='North American Industry Classification System, NAICS' datatype='string' name='[North_American_Industry_Classification_System,_NAICS]' role='dimension' type='nominal' />
+            <column caption='Reference year' datatype='integer' name='[Reference_year]' role='dimension' type='quantitative' />
+            <column-instance column='[Current_debt_to_equity_(%)]' derivation='Avg' name='[avg:Current_debt_to_equity_(%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Debt_to_equity_ratio_(times)]' derivation='Avg' name='[avg:Debt_to_equity_ratio_(times):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Location_indicator]' derivation='None' name='[none:Location_indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[North_American_Industry_Classification_System,_NAICS]' derivation='None' name='[none:North_American_Industry_Classification_System,_NAICS:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reference_year]' derivation='None' name='[none:Reference_year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Location_indicator:nk]'>
+            <groupfilter function='member' level='[none:Location_indicator:nk]' member='&quot;Rural&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Location_indicator:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:North_American_Industry_Classification_System,_NAICS:nk]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[avg:Debt_to_equity_ratio_(times):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:North_American_Industry_Classification_System,_NAICS:nk]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[avg:Current_debt_to_equity_(%):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:North_American_Industry_Classification_System,_NAICS:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.16vnfn119usy1f1eh0rvo1pb4f4w].[avg:Debt_to_equity_ratio_(times):qk] + [federated.16vnfn119usy1f1eh0rvo1pb4f4w].[avg:Current_debt_to_equity_(%):qk])</rows>
+        <cols>[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Reference_year:qk]</cols>
+      </table>
+      <simple-id uuid='{E0BE38E8-9EEA-439B-9E26-F0A043EF8019}' />
+    </worksheet>
+    <worksheet name='average current debt to equity of medium rural business in Canada based on different industries'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (ratio_mb)' name='federated.16vnfn119usy1f1eh0rvo1pb4f4w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16vnfn119usy1f1eh0rvo1pb4f4w'>
+            <column caption='Debt to equity ratio (times)' datatype='real' name='[Debt_to_equity_ratio_(times)]' role='measure' type='quantitative' />
+            <column caption='Location indicator' datatype='string' name='[Location_indicator]' role='dimension' type='nominal' />
+            <column caption='North American Industry Classification System, NAICS' datatype='string' name='[North_American_Industry_Classification_System,_NAICS]' role='dimension' type='nominal' />
+            <column caption='Reference year' datatype='integer' name='[Reference_year]' role='dimension' type='quantitative' />
+            <column-instance column='[Debt_to_equity_ratio_(times)]' derivation='Avg' name='[avg:Debt_to_equity_ratio_(times):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Location_indicator]' derivation='None' name='[none:Location_indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[North_American_Industry_Classification_System,_NAICS]' derivation='None' name='[none:North_American_Industry_Classification_System,_NAICS:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reference_year]' derivation='None' name='[none:Reference_year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Location_indicator:nk]'>
+            <groupfilter function='member' level='[none:Location_indicator:nk]' member='&quot;Rural&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Reference_year:qk]' included-values='in-range'>
+            <min>2019</min>
+            <max>2019</max>
+          </filter>
+          <slices>
+            <column>[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Reference_year:qk]</column>
+            <column>[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Location_indicator:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:North_American_Industry_Classification_System,_NAICS:nk]' value='432' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:North_American_Industry_Classification_System,_NAICS:nk]</rows>
+        <cols>[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[avg:Debt_to_equity_ratio_(times):qk]</cols>
+      </table>
+      <simple-id uuid='{B1F67D8B-4C51-443F-984A-06645A087439}' />
+    </worksheet>
+    <worksheet name='average current debt to equity of medium rural business in Canada based on different industry'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (ratio_mb)' name='federated.16vnfn119usy1f1eh0rvo1pb4f4w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16vnfn119usy1f1eh0rvo1pb4f4w'>
+            <column caption='Current debt to equity (%)' datatype='real' name='[Current_debt_to_equity_(%)]' role='measure' type='quantitative' />
+            <column caption='Location indicator' datatype='string' name='[Location_indicator]' role='dimension' type='nominal' />
+            <column caption='North American Industry Classification System, NAICS' datatype='string' name='[North_American_Industry_Classification_System,_NAICS]' role='dimension' type='nominal' />
+            <column caption='Reference year' datatype='integer' name='[Reference_year]' role='dimension' type='quantitative' />
+            <column-instance column='[Current_debt_to_equity_(%)]' derivation='Avg' name='[avg:Current_debt_to_equity_(%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Location_indicator]' derivation='None' name='[none:Location_indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[North_American_Industry_Classification_System,_NAICS]' derivation='None' name='[none:North_American_Industry_Classification_System,_NAICS:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reference_year]' derivation='None' name='[none:Reference_year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Location_indicator:nk]'>
+            <groupfilter function='member' level='[none:Location_indicator:nk]' member='&quot;Rural&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Reference_year:qk]' included-values='in-range'>
+            <min>2017</min>
+            <max>2019</max>
+          </filter>
+          <slices>
+            <column>[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Reference_year:qk]</column>
+            <column>[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Location_indicator:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:North_American_Industry_Classification_System,_NAICS:nk]' value='468' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:North_American_Industry_Classification_System,_NAICS:nk]</rows>
+        <cols>[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[avg:Current_debt_to_equity_(%):qk]</cols>
+      </table>
+      <simple-id uuid='{DB2D974E-CC18-4298-A9CC-274A9E217807}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='average current debt to equity of medium rural business in Canada based on different industries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Location_indicator:nk]' type='filter' />
+            <card param='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Reference_year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E8491A2D-09E3-42C2-A36D-E292F6B61624}' />
+    </window>
+    <window class='worksheet' maximized='true' name='average current debt to equity of medium rural business in Canada based on different industry'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Location_indicator:nk]' type='filter' />
+            <card param='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Reference_year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3D36518A-95E6-4570-BA6D-FCEC340D14F9}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:Location_indicator:nk]' type='filter' />
+            <card pane-specification-id='3' param='[federated.16vnfn119usy1f1eh0rvo1pb4f4w].[none:North_American_Industry_Classification_System,_NAICS:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ABE89D43-CB13-432C-9C36-4D89F52C5DA1}' />
+    </window>
+  </windows>
+</workbook>

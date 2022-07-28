@@ -1,0 +1,569 @@
+---
+title: "First_RQ"
+author: "Song Zhang"
+date: '2022-06-07'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+mb <- read.csv("new_mb.csv", as.is = TRUE)
+mb_2digind <- read.csv("new_mb_2dig_ind.csv", as.is = TRUE)
+mb_3digind <- read.csv("new_mb_3dig_ind.csv", as.is = TRUE)
+```
+
+```{r}
+names(mb_3digind)
+```
+
+```{r}
+mb_lmdata <- mb[, -c(1, 2, 3, 5, 6)]
+mb_2digindlmdata <- mb_2digind[, -c(1, 2, 3, 5, 6)]
+mb_3digindlmdata <- mb_3digind[, -c(1, 2, 3, 5, 6)]
+mb_lmdata$Location.indicator...code <- mb_lmdata$Location.indicator...code -1
+mb_2digindlmdata$Location.indicator...code <- mb_2digindlmdata$Location.indicator...code -1
+mb_3digindlmdata$Location.indicator...code <- mb_3digindlmdata$Location.indicator...code -1
+names(mb_3digindlmdata)
+head(mb_lmdata)
+```
+
+```{r}
+#install.packages("PerformanceAnalytics")
+library(PerformanceAnalytics)
+my_data <- mb_3digindlmdata[, -c(1, 3, 7, 8, 9)]
+chart.Correlation(my_data, histogram=TRUE, pch=10)
+```
+
+## Backwards selection
+
+```{r}
+names(my_data)
+```
+
+```{r}
+lm0 <- lm(Net.Profit.Loss ~ ., data=my_data) 
+summary(lm0)
+```
+
+```{r}
+mydata1 <- my_data[, -c(1)]
+lm1 <- lm(Net.Profit.Loss ~ ., data=mydata1) 
+summary(lm1)
+```
+
+```{r}
+mydata2 <- mydata1[, -c(9)]
+lm2 <- lm(Net.Profit.Loss ~ ., data=mydata2) 
+summary(lm2)
+```
+
+```{r}
+mydata3 <- mydata2[, -c(7)]
+lm3 <- lm(Net.Profit.Loss ~ ., data=mydata3) 
+summary(lm3)
+```
+
+```{r}
+mydata4 <- mydata3[, -c(10)]
+lm4 <- lm(Net.Profit.Loss ~ ., data=mydata4) 
+summary(lm4)
+```
+
+```{r}
+mydata5 <- mydata4[, -c(11)]
+lm5 <- lm(Net.Profit.Loss ~ ., data=mydata5) 
+summary(lm5)
+```
+
+```{r}
+mydata6 <- mydata5[, -c(8)]
+lm6 <- lm(Net.Profit.Loss ~ ., data=mydata6) 
+summary(lm6)
+```
+
+```{r}
+names(mydata6)
+```
+
+
+
+```{r}
+mydata7 <- mydata6[, -c(5)]
+lm7 <- lm(Net.Profit.Loss ~ ., data=mydata7) 
+summary(lm7)
+```
+
+### For Rural
+
+```{r}
+mb_3ind_rural<-mydata7[ which(mb_3digind$Location.indicator=='Rural'), ]
+```
+
+```{r}
+names(mb_3ind_rural)
+```
+
+
+```{r}
+lm_rural <- lm(Net.Profit.Loss ~ ., data=mb_3ind_rural) 
+summary(lm_rural)
+```
+
+#### Correlation Matrix rural medium
+
+```{r}
+#install.packages("PerformanceAnalytics")
+library(PerformanceAnalytics)
+my_data_rural <- my_data[ which(mb_3digind$Location.indicator=='Rural'), ]
+chart.Correlation(my_data_rural, histogram=TRUE, pch=10)
+```
+
+
+#### backwards selection for rural
+
+```{r}
+lm0_rural <- lm(Net.Profit.Loss ~ ., data=my_data_rural) 
+summary(lm0_rural)
+```
+
+
+
+
+
+```{r}
+my_data_rural1 <- my_data_rural[, -c(10)]
+lm1_rural <- lm(Net.Profit.Loss ~ ., data=my_data_rural1) 
+summary(lm1_rural)
+```
+
+```{r}
+my_data_rural2 <- my_data_rural1[, -c(10)]
+lm2_rural <- lm(Net.Profit.Loss ~ ., data=my_data_rural2) 
+summary(lm2_rural)
+```
+
+
+
+```{r}
+my_data_rural3 <- my_data_rural2[, -c(2)]
+lm3_rural <- lm(Net.Profit.Loss ~ ., data=my_data_rural3) 
+summary(lm3_rural)
+```
+
+```{r}
+my_data_rural4 <- my_data_rural3[, -c(12)]
+lm4_rural <- lm(Net.Profit.Loss ~ ., data=my_data_rural4) 
+summary(lm4_rural)
+```
+
+
+
+```{r}
+my_data_rural5 <- my_data_rural4[, -c(1)]
+lm5_rural <- lm(Net.Profit.Loss ~ ., data=my_data_rural5) 
+summary(lm5_rural)
+```
+
+
+```{r}
+my_data_rural6 <- my_data_rural5[, -c(8)]
+lm6_rural <- lm(Net.Profit.Loss ~ ., data=my_data_rural6) 
+summary(lm6_rural)
+```
+
+```{r}
+my_data_rural7 <- my_data_rural6[, -c(8)]
+lm7_rural <- lm(Net.Profit.Loss ~ ., data=my_data_rural7) 
+summary(lm7_rural)
+```
+
+
+
+```{r}
+my_data_rural8 <- my_data_rural7[, -c(5)]
+lm8_rural <- lm(Net.Profit.Loss ~ ., data=my_data_rural8) 
+summary(lm8_rural)
+```
+
+```{r}
+my_data_rural9 <- my_data_rural8[, -c(7)]
+lm9_rural <- lm(Net.Profit.Loss ~ ., data=my_data_rural9) 
+summary(lm9_rural)
+```
+
+
+
+
+
+
+
+### For urban
+
+```{r}
+mb_3ind_urban<-mydata7[ which(mb_3digind$Location.indicator=='Urban'), ]
+lm7_urban <- lm(Net.Profit.Loss ~ ., data=mb_3ind_urban) 
+summary(lm7_urban)
+```
+
+#### Correlation Matrix urban medium
+
+```{r}
+#install.packages("PerformanceAnalytics")
+library(PerformanceAnalytics)
+my_data_urban <- my_data[ which(mb_3digind$Location.indicator=='Urban'), ]
+chart.Correlation(my_data_urban, histogram=TRUE, pch=10)
+```
+
+
+
+
+############# end of backwards selection ###########
+
+
+```{r}
+library(ggplot2)
+my_data <- mb_lmdata
+ggplot(my_data, aes(x = Total.expenses, y = Net.Profit.Loss, colour=as.factor(Location.indicator...code))) + geom_point() + geom_smooth(method = lm) 
+```
+
+```{r}
+library(ggplot2)
+my_data <- mb_2digindlmdata
+ggplot(my_data, aes(x = Total.expenses, y = Net.Profit.Loss, colour=as.factor(Location.indicator...code))) + geom_point() + geom_smooth(method = lm) 
+```
+
+```{r}
+library(ggplot2)
+my_data <- mb_3digindlmdata
+Location = as.factor(my_data$Location.indicator...code)
+ggplot(my_data, aes(x = Total.expenses, y = Net.Profit.Loss, colour=Location)) + geom_point() + geom_smooth(method = lm) 
+```
+
+```{r}
+my_data <- mb_lmdata
+mb_lm <- lm(Net.Profit.Loss ~Total.expenses*Location.indicator...code, data=my_data) 
+summary(mb_lm)
+```
+
+```{r}
+library(ggplot2)
+my_data <- mb_lmdata
+ggplot(my_data, aes(x = Total.expenses, y = Net.Profit.Loss, colour=as.factor(Location.indicator...code))) + geom_point() + geom_abline(slope = -0.56469, intercept = 5493.68579, colour = 'red') + geom_abline(slope = -0.76408, intercept = 7419.077, colour = 'dark blue')
+#+
+#scale_x_continuous(limits = c(0,300)) +
+#scale_y_continuous(limits = c(0,300))
+#plot(my_data$Net.Profit.Loss~my_data$Total.expenses)
+#abline(mb_lm, col="blue", lwd=3)
+#+ geom_smooth(method = lm) 
+```
+
+```{r}
+my_data <- mb_2digindlmdata
+mb_lm <- lm(Net.Profit.Loss ~Total.expenses*Location.indicator...code, data=my_data) 
+summary(mb_lm)
+```
+
+```{r}
+library(ggplot2)
+my_data <- mb_2digindlmdata
+ggplot(my_data, aes(x = Total.expenses, y = Net.Profit.Loss, colour=as.factor(Location.indicator...code))) + geom_point() + geom_abline(slope = -0.92051, intercept = 8336.38891, colour = 'red') + geom_abline(slope = -0.82835, intercept = 7854.27, colour = 'dark blue')
+#+
+#scale_x_continuous(limits = c(0,300)) +
+#scale_y_continuous(limits = c(0,300))
+#plot(my_data$Net.Profit.Loss~my_data$Total.expenses)
+#abline(mb_lm, col="blue", lwd=3)
+#+ geom_smooth(method = lm) 
+```
+
+```{r}
+my_data <- mb_3digindlmdata
+mb_lm <- lm(Net.Profit.Loss ~Total.expenses*Location.indicator...code, data=my_data) 
+summary(mb_lm)
+```
+
+```{r}
+library(ggplot2)
+my_data <- mb_3digindlmdata
+ggplot(my_data, aes(x = Total.expenses, y = Net.Profit.Loss, colour=as.factor(Location.indicator...code))) + geom_point() + geom_abline(slope = -0.4679, intercept = 4651.4470, colour = 'red') + geom_abline(slope = -0.7594, intercept = 7400.342, colour = 'dark blue')
+#+
+#scale_x_continuous(limits = c(0,300)) +
+#scale_y_continuous(limits = c(0,300))
+#plot(my_data$Net.Profit.Loss~my_data$Total.expenses)
+#abline(mb_lm, col="blue", lwd=3)
+#+ geom_smooth(method = lm) 
+```
+
+                 colour = 'red'---rural  | colour = 'dark blue'---urban
+
+slope = -0.56469, intercept = 5493.68579 \| slope = -0.76408, intercept = 7419.077 \| All slope = -0.92051, intercept = 8336.38891 \| slope = -0.82835, intercept = 7854.27 \| 2dig slope = -0.4679, intercept = 4651.4470 \| slope = -0.7594, intercept = 7400.342 \| 3dig
+
+
+
+
+```{r}
+my_data <- mb_lmdata
+mb_lm_paral <- lm(Net.Profit.Loss~Total.expenses+Location.indicator...code, data=my_data) 
+summary(mb_lm_paral)
+```
+
+```{r}
+library(ggplot2)
+my_data <- mb_lmdata
+ggplot(my_data, aes(x = Total.expenses, y = Net.Profit.Loss, colour=as.factor(Location.indicator...code))) + geom_point() + geom_abline(slope = -0.69866, intercept = 6632.99072, colour = 'red') + geom_abline(slope = -0.69866, intercept = 6824.647, colour = 'dark blue')
+#+
+#scale_x_continuous(limits = c(0,300)) +
+#scale_y_continuous(limits = c(0,300))
+#plot(my_data$Net.Profit.Loss~my_data$Total.expenses)
+#abline(mb_lm, col="blue", lwd=3)
+#+ geom_smooth(method = lm) 
+```
+
+```{r}
+my_data <- mb_2digindlmdata
+mb_lm_paral <- lm(Net.Profit.Loss~Total.expenses+Location.indicator...code, data=my_data) 
+summary(mb_lm_paral)
+```
+
+```{r}
+library(ggplot2)
+my_data <- mb_2digindlmdata
+ggplot(my_data, aes(x = Total.expenses, y = Net.Profit.Loss, colour=as.factor(Location.indicator...code))) + geom_point() + geom_abline(slope = -0.86964, intercept = 7933.03356, colour = 'red') + geom_abline(slope = -0.86964, intercept = 8210.962, colour = 'dark blue')
+#+
+#scale_x_continuous(limits = c(0,300)) +
+#scale_y_continuous(limits = c(0,300))
+#plot(my_data$Net.Profit.Loss~my_data$Total.expenses)
+#abline(mb_lm, col="blue", lwd=3)
+#+ geom_smooth(method = lm) 
+```
+
+```{r}
+my_data <- mb_3digindlmdata
+mb_lm_paral <- lm(Net.Profit.Loss~Total.expenses+Location.indicator...code, data=my_data) 
+summary(mb_lm_paral)
+```
+
+```{r}
+library(ggplot2)
+my_data <- mb_3digindlmdata
+ggplot(my_data, aes(x = Total.expenses, y = Net.Profit.Loss, colour=as.factor(Location.indicator...code))) + geom_point() + geom_abline(slope = -0.67259, intercept = 6423.53835, colour = 'red') + geom_abline(slope = -0.67259, intercept = 6603.554, colour = 'dark blue')
+#+
+#scale_x_continuous(limits = c(0,300)) +
+#scale_y_continuous(limits = c(0,300))
+#plot(my_data$Net.Profit.Loss~my_data$Total.expenses)
+#abline(mb_lm, col="blue", lwd=3)
+#+ geom_smooth(method = lm) 
+```
+
+                 colour = 'red'---rural  | colour = 'dark blue'---urban
+
+slope = -0.69866, intercept = 6632.99072 \| slope = -0.69866, intercept = 6824.647 \| All slope = -0.86964, intercept = 7933.03356 \| slope = -0.86964, intercept = 8210.962 \| 2dig slope = -0.67259, intercept = 6423.53835 \| slope = -0.67259, intercept = 6603.554 \| 3dig
+
+##### Gross Margin
+
+```{r}
+my_data <- mb_lmdata
+mb_lm_gross <- lm(Gross.margin....~Cost.of.sales..direct.expenses.....+Operating.expenses..indirect.expenses.....+Location.indicator...code, data=my_data) 
+summary(mb_lm_gross)
+```
+
+```{r}
+my_data <- mb_2digindlmdata
+mb_lm_gross <- lm(Gross.margin....~Cost.of.sales..direct.expenses.....+Operating.expenses..indirect.expenses.....+Location.indicator...code, data=my_data) 
+summary(mb_lm_gross)
+```
+
+```{r}
+my_data <- mb_3digindlmdata
+mb_lm_gross <- lm(Gross.margin....~Cost.of.sales..direct.expenses.....+Operating.expenses..indirect.expenses.....+Location.indicator...code, data=my_data) 
+summary(mb_lm_gross)
+```
+
+#### Gross margin intersection
+
+```{r}
+my_data <- mb_lmdata
+mb_lm_gross2 <- lm(Gross.margin....~Cost.of.sales..direct.expenses.....*Location.indicator...code+Operating.expenses..indirect.expenses.....*Location.indicator...code, data=my_data) 
+summary(mb_lm_gross2)
+```
+
+```{r}
+my_data <- mb_2digindlmdata
+mb_lm_gross2 <- lm(Gross.margin....~Cost.of.sales..direct.expenses.....*Location.indicator...code+Operating.expenses..indirect.expenses.....*Location.indicator...code, data=my_data) 
+summary(mb_lm_gross2)
+```
+
+```{r}
+my_data <- mb_3digindlmdata
+mb_lm_gross2 <- lm(Gross.margin....~Cost.of.sales..direct.expenses.....*Location.indicator...code+Operating.expenses..indirect.expenses.....*Location.indicator...code, data=my_data) 
+summary(mb_lm_gross2)
+```
+
+###### PCA
+
+## mb
+
+```{r}
+mb_pca <- read.csv("new_mb_pca.csv", as.is = TRUE)
+```
+
+
+```{r}
+
+names(mb_pca)
+```
+
+
+```{r}
+my_data <- mb_pca[,-c(1:6)]
+```
+
+```{r}
+my_data
+```
+
+
+
+```{r}
+prcomp(my_data, scale.=TRUE)
+```
+
+```{r}
+mbpca <- prcomp(my_data, scale.=TRUE)
+summary(mbpca)
+```
+
+```{r}
+plot(mbpca, type="lines", npcs=26)
+```
+
+```{r}
+loadi <- round(mbpca$rotation[,1:5], 2)
+loadi[abs(loadi)<0.2] <- NA
+loadi
+```
+
+```{r}
+biplot(mbpca)
+```
+
+```{r}
+head(mb[order(mbpca$x[,1], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+tail(mb[order(mbpca$x[,1], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+head(mb[order(mbpca$x[,2], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+tail(mb[order(mbpca$x[,2], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+head(mb[order(mbpca$x[,3], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+tail(mb[order(mbpca$x[,3], decreasing=TRUE),c(3,5,6)])
+
+```
+
+## mb_2dig
+
+```{r}
+my_data <- mb_2digindlmdata[,-c(1, 8, 9)]
+mbpca_2dig <- prcomp(my_data, scale.=TRUE)
+summary(mbpca_2dig)
+```
+
+```{r}
+plot(mbpca_2dig, type="lines", npcs=26)
+```
+
+```{r}
+loadi_2dig <- round(mbpca_2dig$rotation[,1:5], 2)
+loadi_2dig[abs(loadi_2dig)<0.2] <- NA
+loadi_2dig
+```
+
+```{r}
+biplot(mbpca_2dig)
+```
+
+```{r}
+head(mb_2digind[order(mbpca_2dig$x[,1], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+tail(mb_2digind[order(mbpca_2dig$x[,1], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+head(mb_2digind[order(mbpca_2dig$x[,2], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+tail(mb_2digind[order(mbpca_2dig$x[,2], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+head(mb_2digind[order(mbpca_2dig$x[,3], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+tail(mb_2digind[order(mbpca_2dig$x[,3], decreasing=TRUE),c(3,5,6)])
+
+```
+
+## mb_3dig
+
+```{r}
+my_data <- mb_3digindlmdata[,-c(1, 8, 9)]
+mbpca_3dig <- prcomp(my_data, scale.=TRUE)
+summary(mbpca_3dig)
+```
+
+```{r}
+plot(mbpca_3dig, type="lines", npcs=26)
+```
+
+```{r}
+loadi_3dig <- round(mbpca_3dig$rotation[,1:5], 2)
+loadi_3dig[abs(loadi_3dig)<0.2] <- NA
+loadi_3dig
+```
+
+```{r}
+biplot(mbpca_3dig)
+```
+
+```{r}
+head(mb_3digind[order(mbpca_3dig$x[,1], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+tail(mb_3digind[order(mbpca_3dig$x[,1], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+head(mb_3digind[order(mbpca_3dig$x[,2], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+tail(mb_3digind[order(mbpca_3dig$x[,2], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+head(mb_3digind[order(mbpca_3dig$x[,3], decreasing=TRUE),c(3,5,6)])
+```
+
+```{r}
+tail(mb_3digind[order(mbpca_3dig$x[,3], decreasing=TRUE),c(3,5,6)])
+
+```

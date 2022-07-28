@@ -1,0 +1,109 @@
+,"North American Industry Classification System, NAICS - code","North American Industry Classification System, NAICS",Reference year,Total number of businesses,Average revenue,Average expenses,Net Profit/Loss,Sales of goods and services ( percent of total revenue),Gross margin (%),Cost of sales (direct expenses) (%),Operating expenses (indirect expenses) (%),Business type,Total revenue,Total expenses
+2,11,"Agriculture, forestry, fishing and hunting",2017.0,49243.0,645.7,707.0,-61.3,,95.4,4.6,104.9,Small Business,31796205.1,34814801.0
+101,21,"Mining, quarrying, and oil and gas extraction",2017.0,5477.0,396.3,349.7,46.6,,82.1,17.9,70.4,Small Business,2170535.1,1915306.9
+200,22,Utilities,2017.0,459.0,561.9,489.0,72.9,,69.2,30.8,56.3,Small Business,257912.09999999998,224451.0
+299,23,Construction,2017.0,47606.0,429.5,383.9,45.5,,48.1,51.9,37.5,Small Business,20446777.0,18275943.4
+398,31-33,Manufacturing,2017.0,10319.0,641.1,600.6,40.5,,40.7,59.3,34.4,Small Business,6615510.9,6197591.4
+497,41,Wholesale trade,2017.0,6915.0,778.2,731.6,46.6,,38.5,61.5,32.5,Small Business,5381253.0,5059014.0
+596,44-45,Retail trade,2017.0,23255.0,832.5,796.9,35.6,,29.6,70.4,25.4,Small Business,19359787.5,18531909.5
+695,48-49,Transportation and warehousing,2017.0,22066.0,417.1,365.8,51.3,,83.0,17.0,70.7,Small Business,9203728.6,8071742.8
+794,51,Information and cultural industries,2017.0,1971.0,302.4,258.8,43.6,,72.1,27.9,57.7,Small Business,596030.3999999999,510094.80000000005
+893,53,Real estate and rental and leasing,2017.0,34075.0,176.3,132.6,43.7,,91.8,8.2,67.0,Small Business,6007422.5,4518345.0
+992,54,"Professional, scientific and technical services",2017.0,22932.0,237.7,167.9,69.8,,84.8,15.2,55.4,Small Business,5450936.399999999,3850282.8000000003
+1091,55,Management of companies and enterprises,2017.0,1531.0,520.6,228.8,291.8,,96.8,3.2,40.7,Small Business,797038.6,350292.8
+1190,56,"Administrative and support, waste management and remediation services",2017.0,11954.0,305.0,251.5,53.5,,72.8,27.2,55.3,Small Business,3645970.0,3006431.0
+1289,61,Educational services,2017.0,1769.0,229.4,195.0,34.4,,85.7,14.3,70.7,Small Business,405808.60000000003,344955.0
+1388,62,Health care and social assistance,2017.0,19170.0,313.4,205.4,108.0,,94.3,5.7,59.8,Small Business,6007878.0,3937518.0
+1487,71,"Arts, entertainment and recreation",2017.0,5454.0,277.1,253.2,23.9,,75.9,24.1,67.2,Small Business,1511303.4000000001,1380952.8
+1586,72,Accommodation and food services,2017.0,16131.0,489.2,457.1,32.1,,62.8,37.2,56.2,Small Business,7891285.2,7373480.100000001
+1685,81,Other services (except public administration),2017.0,25021.0,292.0,257.2,34.8,,61.1,38.9,49.1,Small Business,7306132.0,6435401.199999999
+1784,11,"Agriculture, forestry, fishing and hunting",2018.0,50014.0,637.9,715.9,-77.9,,95.5,4.5,107.7,Small Business,31903930.599999998,35805022.6
+1883,21,"Mining, quarrying, and oil and gas extraction",2018.0,5395.0,402.4,377.1,25.3,,81.9,18.1,75.6,Small Business,2170948.0,2034454.5000000002
+1982,22,Utilities,2018.0,474.0,552.9,474.1,78.8,,73.5,26.5,59.2,Small Business,262074.59999999998,224723.40000000002
+2081,23,Construction,2018.0,48211.0,440.5,392.4,48.1,,48.0,52.0,37.1,Small Business,21236945.5,18917996.4
+2180,31-33,Manufacturing,2018.0,10242.0,646.9,604.3,42.7,,41.5,58.5,34.9,Small Business,6625549.8,6189240.6
+2279,41,Wholesale trade,2018.0,6807.0,777.4,731.8,45.7,,38.3,61.7,32.4,Small Business,5291761.8,4981362.6
+2378,44-45,Retail trade,2018.0,23078.0,839.6,805.0,34.7,,29.7,70.3,25.6,Small Business,19376288.8,18577790.0
+2477,48-49,Transportation and warehousing,2018.0,21847.0,432.0,380.0,51.9,,82.9,17.1,70.9,Small Business,9437904.0,8301860.0
+2576,51,Information and cultural industries,2018.0,2010.0,317.6,277.3,40.2,,70.5,29.5,57.9,Small Business,638376.0,557373.0
+2675,53,Real estate and rental and leasing,2018.0,36055.0,174.3,130.8,43.4,,92.2,7.8,67.3,Small Business,6284386.5,4715994.0
+2774,54,"Professional, scientific and technical services",2018.0,23379.0,242.5,169.8,72.7,,84.4,15.6,54.4,Small Business,5669407.5,3969754.2
+2873,55,Management of companies and enterprises,2018.0,1771.0,483.7,192.4,291.3,,95.7,4.3,35.5,Small Business,856632.7,340740.4
+2972,56,"Administrative and support, waste management and remediation services",2018.0,12070.0,314.0,257.1,56.8,,72.7,27.3,54.6,Small Business,3789980.0,3103197.0000000005
+3071,61,Educational services,2018.0,1828.0,223.7,183.7,40.0,,87.2,12.8,69.3,Small Business,408923.6,335803.6
+3170,62,Health care and social assistance,2018.0,19607.0,322.1,212.0,110.1,,94.1,5.9,59.9,Small Business,6315414.7,4156684.0
+3269,71,"Arts, entertainment and recreation",2018.0,5509.0,272.7,251.6,21.1,,76.1,23.9,68.4,Small Business,1502304.3,1386064.4
+3368,72,Accommodation and food services,2018.0,16204.0,499.5,468.1,31.4,,63.0,37.0,56.7,Small Business,8093898.0,7585092.4
+3467,81,Other services (except public administration),2018.0,25532.0,298.9,262.3,36.6,,61.2,38.8,48.9,Small Business,7631514.8,6697043.600000001
+3566,11,"Agriculture, forestry, fishing and hunting",2019.0,50734.0,645.3,735.1,-89.8,,95.5,4.5,109.4,Small Business,32738650.2,37294563.4
+3665,21,"Mining, quarrying, and oil and gas extraction",2019.0,5153.0,400.4,365.3,35.1,,81.9,18.1,73.1,Small Business,2063261.2,1882390.9000000001
+3764,22,Utilities,2019.0,453.0,606.7,520.8,85.9,,72.9,27.1,58.8,Small Business,274835.10000000003,235922.39999999997
+3863,23,Construction,2019.0,47917.0,452.7,404.3,48.4,,48.1,51.9,37.4,Small Business,21692025.9,19372843.1
+3962,31-33,Manufacturing,2019.0,10288.0,658.0,616.0,42.0,,41.6,58.4,35.2,Small Business,6769504.0,6337408.0
+4061,41,Wholesale trade,2019.0,6647.0,772.1,729.5,42.5,,38.1,61.9,32.6,Small Business,5132148.7,4848986.5
+4160,44-45,Retail trade,2019.0,22620.0,849.9,814.6,35.4,,30.0,70.0,25.8,Small Business,19224738.0,18426252.0
+4259,48-49,Transportation and warehousing,2019.0,21500.0,437.9,388.5,49.4,,82.6,17.4,71.3,Small Business,9414850.0,8352750.0
+4358,51,Information and cultural industries,2019.0,2009.0,308.0,262.7,45.3,,71.3,28.7,56.6,Small Business,618772.0,527764.2999999999
+4457,53,Real estate and rental and leasing,2019.0,37438.0,172.8,129.4,43.3,,92.7,7.3,67.6,Small Business,6469286.4,4844477.2
+4556,54,"Professional, scientific and technical services",2019.0,23906.0,240.8,170.4,70.4,,84.1,15.9,54.9,Small Business,5756564.8,4073582.4
+4655,55,Management of companies and enterprises,2019.0,1836.0,501.4,221.1,280.3,,94.9,5.1,39.0,Small Business,920570.3999999999,405939.6
+4754,56,"Administrative and support, waste management and remediation services",2019.0,12328.0,304.9,250.6,54.3,,71.7,28.3,53.9,Small Business,3758807.1999999997,3089396.8
+4853,61,Educational services,2019.0,1898.0,224.4,183.5,40.9,,85.9,14.1,67.7,Small Business,425911.2,348283.0
+4952,62,Health care and social assistance,2019.0,19859.0,324.5,216.3,108.2,,94.0,6.0,60.6,Small Business,6444245.5,4295501.7
+5051,71,"Arts, entertainment and recreation",2019.0,5717.0,272.4,249.5,22.9,,76.9,23.1,68.5,Small Business,1557310.7999999998,1426391.5
+5150,72,Accommodation and food services,2019.0,16208.0,507.3,475.9,31.4,,63.0,37.0,56.8,Small Business,8222318.4,7713387.199999999
+5249,81,Other services (except public administration),2019.0,25941.0,301.6,264.8,36.8,,61.3,38.7,49.1,Small Business,7823805.600000001,6869176.800000001
+0,11,"Agriculture, forestry, fishing and hunting",2017.0,1108.0,8615.9,9545.2,-929.3,93.0,80.5,18.2,92.6,Medium Business,9546417.2,10576081.600000001
+2,21,"Mining, quarrying, and oil and gas extraction",2017.0,131.0,9178.2,8287.5,890.7,97.9,57.7,41.4,48.9,Medium Business,1202344.2000000002,1085662.5
+4,22,Utilities,2017.0,34.0,8889.3,8690.0,199.3,91.5,44.8,50.5,47.3,Medium Business,302236.19999999995,295460.0
+6,23,Construction,2017.0,851.0,8883.3,8146.5,736.8,98.6,34.3,64.8,26.9,Medium Business,7559688.3,6932671.5
+8,31-33,Manufacturing,2017.0,809.0,9757.6,9124.5,633.0,98.3,27.0,71.8,21.8,Medium Business,7893898.4,7381720.5
+10,41,Wholesale trade,2017.0,795.0,9801.3,9468.0,333.3,98.7,20.0,78.9,17.7,Medium Business,7792033.499999999,7527060.0
+12,44-45,Retail trade,2017.0,1961.0,9671.1,9405.3,265.7,98.3,20.7,78.0,19.3,Medium Business,18965027.1,18443793.299999997
+14,48-49,Transportation and warehousing,2017.0,436.0,9105.5,8033.0,1072.5,97.4,65.9,33.2,55.0,Medium Business,3969998.0,3502388.0
+16,51,Information and cultural industries,2017.0,27.0,8082.7,6843.9,1238.9,98.7,80.5,19.2,65.4,Medium Business,218232.9,184785.3
+18,53,Real estate and rental and leasing,2017.0,96.0,8626.9,7128.9,1498.0,75.3,63.8,27.2,55.4,Medium Business,828182.3999999999,684374.3999999999
+20,54,"Professional, scientific and technical services",2017.0,63.0,8100.3,5897.5,2202.9,85.6,68.3,27.1,45.7,Medium Business,510318.9,371542.5
+22,55,Management of companies and enterprises,2017.0,57.0,9894.8,3999.0,5895.8,31.1,71.0,9.0,31.4,Medium Business,564003.6,227943.0
+24,56,"Administrative and support, waste management and remediation services",2017.0,111.0,8520.4,7798.8,721.6,91.1,55.0,41.0,50.6,Medium Business,945764.3999999999,865666.8
+26,61,Educational services,2017.0,10.0,7946.7,7450.5,496.3,31.1,93.3,2.1,91.7,Medium Business,79467.0,74505.0
+28,62,Health care and social assistance,2017.0,80.0,7964.9,7452.2,512.6,61.7,76.4,14.6,79.0,Medium Business,637192.0,596176.0
+30,71,"Arts, entertainment and recreation",2017.0,31.0,9247.9,8605.4,642.5,76.7,58.5,31.9,61.2,Medium Business,286684.89999999997,266767.39999999997
+32,72,Accommodation and food services,2017.0,181.0,8405.8,7875.1,530.8,97.3,57.3,41.5,52.2,Medium Business,1521449.7999999998,1425393.1
+34,81,Other services (except public administration),2017.0,120.0,8966.3,7940.2,1026.1,81.6,39.5,49.4,39.1,Medium Business,1075956.0,952824.0
+36,11,"Agriculture, forestry, fishing and hunting",2018.0,1219.0,8438.7,9545.1,-1106.4,93.0,80.6,18.0,95.1,Medium Business,10286775.3,11635476.9
+38,21,"Mining, quarrying, and oil and gas extraction",2018.0,168.0,9607.2,8798.1,809.0,98.0,54.4,44.7,46.9,Medium Business,1614009.6,1478080.8
+40,22,Utilities,2018.0,35.0,9167.5,9046.3,121.2,90.4,48.1,46.9,51.8,Medium Business,320862.5,316620.5
+42,23,Construction,2018.0,961.0,8837.8,7977.2,860.6,98.6,34.6,64.5,25.7,Medium Business,8493125.799999999,7666089.2
+44,31-33,Manufacturing,2018.0,842.0,9782.4,9188.5,593.9,98.5,26.6,72.3,21.6,Medium Business,8236780.8,7736717.0
+46,41,Wholesale trade,2018.0,797.0,9821.5,9491.6,329.9,99.1,20.0,79.3,17.4,Medium Business,7827735.5,7564805.2
+48,44-45,Retail trade,2018.0,2065.0,9741.4,9488.9,252.5,98.3,20.2,78.4,19.0,Medium Business,20115991.0,19594578.5
+50,48-49,Transportation and warehousing,2018.0,485.0,9148.5,8062.4,1086.1,98.0,64.2,35.1,53.0,Medium Business,4437022.5,3910264.0
+52,51,Information and cultural industries,2018.0,29.0,9260.1,7376.7,1883.4,97.2,77.1,22.2,57.4,Medium Business,268542.9,213924.3
+54,53,Real estate and rental and leasing,2018.0,107.0,9016.1,7453.8,1562.3,70.9,60.2,28.2,54.4,Medium Business,964722.7000000001,797556.6
+56,54,"Professional, scientific and technical services",2018.0,77.0,7646.5,6090.5,1555.9,94.7,63.4,34.6,45.0,Medium Business,588780.5,468968.5
+58,55,Management of companies and enterprises,2018.0,57.0,10109.0,3769.2,6339.8,31.4,54.5,14.3,23.0,Medium Business,576213.0,214844.4
+60,56,"Administrative and support, waste management and remediation services",2018.0,112.0,8599.4,7649.6,949.8,91.0,58.4,37.8,51.1,Medium Business,963132.7999999999,856755.2000000001
+62,61,Educational services,2018.0,15.0,8210.9,7425.7,785.2,37.0,93.9,2.3,88.2,Medium Business,123163.5,111385.5
+64,62,Health care and social assistance,2018.0,85.0,8629.2,8066.1,563.1,64.4,78.8,13.6,79.8,Medium Business,733482.0000000001,685618.5
+66,71,"Arts, entertainment and recreation",2018.0,37.0,8766.5,8075.5,691.0,71.7,56.4,31.3,60.8,Medium Business,324360.5,298793.5
+68,72,Accommodation and food services,2018.0,206.0,8476.0,7771.7,704.2,96.8,57.1,41.5,50.1,Medium Business,1746056.0,1600970.2
+70,81,Other services (except public administration),2018.0,137.0,8657.5,7789.1,868.4,86.4,39.2,52.5,37.4,Medium Business,1186077.5,1067106.7
+72,11,"Agriculture, forestry, fishing and hunting",2019.0,1216.0,8431.7,9494.7,-1063.0,91.5,82.5,16.0,96.6,Medium Business,10252947.200000001,11545555.200000001
+74,21,"Mining, quarrying, and oil and gas extraction",2019.0,175.0,9371.3,8366.9,1004.5,96.9,57.6,41.1,48.2,Medium Business,1639977.4999999998,1464207.5
+76,22,Utilities,2019.0,27.0,9614.5,8950.1,664.4,95.6,47.7,50.0,43.1,Medium Business,259591.5,241652.7
+78,23,Construction,2019.0,962.0,9003.0,8199.3,803.7,98.6,32.8,66.3,24.8,Medium Business,8660886.0,7887726.6
+80,31-33,Manufacturing,2019.0,867.0,9949.2,9421.3,527.9,98.8,26.8,72.3,22.4,Medium Business,8625956.4,8168267.1
+82,41,Wholesale trade,2019.0,784.0,9842.1,9561.7,280.4,98.7,20.8,78.2,19.0,Medium Business,7716206.4,7496372.800000001
+84,44-45,Retail trade,2019.0,2035.0,9746.9,9514.3,232.6,98.4,20.5,78.2,19.4,Medium Business,19834941.5,19361600.5
+86,48-49,Transportation and warehousing,2019.0,507.0,9248.8,8154.9,1093.9,98.0,63.5,35.8,52.4,Medium Business,4689141.6,4134534.3
+88,51,Information and cultural industries,2019.0,32.0,9368.7,7720.8,1647.9,88.1,79.5,18.1,64.3,Medium Business,299798.4,247065.6
+90,53,Real estate and rental and leasing,2019.0,100.0,8662.5,6882.6,1779.9,65.4,63.2,24.1,55.4,Medium Business,866250.0,688260.0
+92,54,"Professional, scientific and technical services",2019.0,81.0,8034.0,6577.3,1456.7,98.5,64.6,34.8,47.0,Medium Business,650754.0,532761.3
+94,55,Management of companies and enterprises,2019.0,47.0,10521.0,4287.4,6233.7,39.6,63.2,14.6,26.2,Medium Business,494487.0,201507.8
+96,56,"Administrative and support, waste management and remediation services",2019.0,135.0,8717.6,7843.1,874.4,91.4,57.2,39.1,50.9,Medium Business,1176876.0,1058818.5
+98,61,Educational services,2019.0,14.0,7172.9,6482.0,691.0,45.8,97.3,1.2,89.1,Medium Business,100420.59999999999,90748.0
+100,62,Health care and social assistance,2019.0,88.0,8721.8,8093.7,628.1,67.6,83.0,11.5,81.3,Medium Business,767518.3999999999,712245.6
+102,71,"Arts, entertainment and recreation",2019.0,41.0,8953.2,8134.8,818.4,75.0,57.1,32.2,58.7,Medium Business,367081.2,333526.8
+104,72,Accommodation and food services,2019.0,203.0,8599.2,8085.0,514.2,97.6,55.3,43.6,50.4,Medium Business,1745637.6,1641255.0
+106,81,Other services (except public administration),2019.0,132.0,8666.5,7646.5,1020.0,86.7,40.8,51.4,36.9,Medium Business,1143978.0,1009338.0

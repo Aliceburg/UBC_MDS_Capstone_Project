@@ -1,0 +1,52 @@
+Geography,Location indicator - code,Location indicator,Incorporation status,Reference year,Net Profit/Loss,Labour and commissions,Percent of profitable businesses,Labour force characteristics,Sex,Age group,unemployment_rate,Total number of businesses,Current ratio (times),Debt to equity ratio (times),Debt ratio (times),Current debt to equity (%),Total equity
+Newfoundland and Labrador,1.0,Urban,All businesses,2017,50.3,118.6,74.1,Unemployment rate,Both sexes,15 years and over,9.5,10917,1.7,1.1,0.5,43.8,573.7
+Prince Edward Island,1.0,Urban,All businesses,2017,46.6,88.1,80.7,Unemployment rate,Both sexes,15 years and over,7.3,3902,1.4,1.7,0.6,59,363.9
+Nova Scotia,0.0,Rural,All businesses,2017,53.5,74.2,83.8,Unemployment rate,Both sexes,15 years and over,9.4,13626,1.6,1.3,0.6,50.7,311.9
+Nova Scotia,1.0,Urban,All businesses,2017,62.6,82.2,82.8,Unemployment rate,Both sexes,15 years and over,8.2,24094,1.1,1.5,0.6,64.9,469.6
+New Brunswick,1.0,Urban,All businesses,2017,60.8,90.9,79.2,Unemployment rate,Both sexes,15 years and over,6.7,17354,1.6,0.9,0.5,31.4,618.1
+Québec,0.0,Rural,All businesses,2017,35.5,62.8,77.2,Unemployment rate,Both sexes,15 years and over,6.3,75358,1.3,1.3,0.6,45.8,418.8
+Québec,1.0,Urban,All businesses,2017,57.5,66.5,83.3,Unemployment rate,Both sexes,15 years and over,6.0,334053,1.5,1.1,0.5,44.4,526.7
+Ontario,0.0,Rural,All businesses,2017,37.2,63.7,78.2,Unemployment rate,Both sexes,15 years and over,5.1,64260,1.5,1.4,0.6,51.3,483.7
+Ontario,1.0,Urban,All businesses,2017,57.9,72.9,81.6,Unemployment rate,Both sexes,15 years and over,6.1,648934,1.7,1.3,0.6,61.9,436.5
+Manitoba,0.0,Rural,All businesses,2017,12.4,68.8,72.8,Unemployment rate,Both sexes,15 years and over,4.1,15648,2.2,1,0.5,31.9,720.8
+Manitoba,1.0,Urban,All businesses,2017,62.2,81.3,81.2,Unemployment rate,Both sexes,15 years and over,5.8,38905,2.4,1,0.5,36.8,578.9
+Saskatchewan,0.0,Rural,All businesses,2017,-15.8,56.2,66.4,Unemployment rate,Both sexes,15 years and over,5.4,24395,2.6,0.8,0.4,27.3,859.4
+Saskatchewan,1.0,Urban,All businesses,2017,63.6,83.1,80.4,Unemployment rate,Both sexes,15 years and over,6.7,35827,1.7,1,0.5,35.7,647.2
+Alberta,0.0,Rural,All businesses,2017,30,76.1,71.9,Unemployment rate,Both sexes,15 years and over,6.9,53743,1.6,1.1,0.5,45.5,516.4
+Alberta,1.0,Urban,All businesses,2017,54.6,80.5,78.4,Unemployment rate,Both sexes,15 years and over,8.1,207529,1.6,1.1,0.5,48.4,526.5
+British Columbia,0.0,Rural,All businesses,2017,54.3,65.1,82.4,Unemployment rate,Both sexes,15 years and over,5.7,33010,1.6,1.5,0.6,58.9,331
+British Columbia,1.0,Urban,All businesses,2017,61.7,72.9,83.4,Unemployment rate,Both sexes,15 years and over,5.1,274858,1.8,1.2,0.5,44.2,581.6
+Newfoundland and Labrador,1.0,Urban,All businesses,2018,43.2,120.3,74,Unemployment rate,Both sexes,15 years and over,9.6,10824,1.6,1.1,0.5,42.9,586.6
+Prince Edward Island,1.0,Urban,All businesses,2018,51.9,88.2,77.8,Unemployment rate,Both sexes,15 years and over,7.1,4689,1.5,1.7,0.6,54.2,396.8
+Nova Scotia,0.0,Rural,All businesses,2018,52.1,74.7,82.9,Unemployment rate,Both sexes,15 years and over,8.2,14022,1.6,1.2,0.5,45,362.9
+Nova Scotia,1.0,Urban,All businesses,2018,58.6,83.4,82.6,Unemployment rate,Both sexes,15 years and over,7.4,24645,1.4,1.6,0.6,59.7,465
+New Brunswick,1.0,Urban,All businesses,2018,58.8,94.2,79.3,Unemployment rate,Both sexes,15 years and over,6.7,17803,1.7,1,0.5,32.7,615.6
+Québec,0.0,Rural,All businesses,2018,35.8,63.5,76.6,Unemployment rate,Both sexes,15 years and over,5.5,77295,1.3,1.3,0.6,45.4,425.6
+Québec,1.0,Urban,All businesses,2018,59.2,67.2,83,Unemployment rate,Both sexes,15 years and over,5.5,347148,1.5,1.1,0.5,44.2,539.2
+Ontario,0.0,Rural,All businesses,2018,37.3,64.4,78.5,Unemployment rate,Both sexes,15 years and over,5.4,65646,1.5,1.4,0.6,50.3,502.4
+Ontario,1.0,Urban,All businesses,2018,56.1,73.5,81.7,Unemployment rate,Both sexes,15 years and over,5.8,679602,1.7,1.2,0.6,58.1,477.6
+Manitoba,0.0,Rural,All businesses,2018,0.7,68.5,71.2,Unemployment rate,Both sexes,15 years and over,5.3,15871,2.1,1,0.5,33.1,744.5
+Manitoba,1.0,Urban,All businesses,2018,62,82.5,81.5,Unemployment rate,Both sexes,15 years and over,6.2,39632,1.8,1.2,0.5,44.5,487.8
+Saskatchewan,0.0,Rural,All businesses,2018,-26.8,55.6,65,Unemployment rate,Both sexes,15 years and over,5.1,24098,2.5,0.8,0.4,28.6,880.8
+Saskatchewan,1.0,Urban,All businesses,2018,58.6,82.8,79.5,Unemployment rate,Both sexes,15 years and over,6.7,36906,1.6,1,0.5,38.4,676.2
+Alberta,0.0,Rural,All businesses,2018,26.9,77,72.4,Unemployment rate,Both sexes,15 years and over,5.7,53650,1.1,1.4,0.6,83.2,629.4
+Alberta,1.0,Urban,All businesses,2018,58.6,80.4,79,Unemployment rate,Both sexes,15 years and over,6.8,213344,1.7,1.3,0.6,54,475.6
+British Columbia,0.0,Rural,All businesses,2018,56.1,65.9,83,Unemployment rate,Both sexes,15 years and over,5.5,34268,1.6,1.5,0.6,56.2,339.4
+British Columbia,1.0,Urban,All businesses,2018,60.2,74,83.2,Unemployment rate,Both sexes,15 years and over,4.7,287952,1.8,1.2,0.5,42.6,636.8
+Newfoundland and Labrador,1.0,Urban,All businesses,2019,48.7,119.8,74.3,Unemployment rate,Both sexes,15 years and over,8.6,10736,1.9,1.5,0.6,52.8,429.5
+Prince Edward Island,1.0,Urban,All businesses,2019,51.4,88.6,78,Unemployment rate,Both sexes,15 years and over,7.1,4484,1.5,1.6,0.6,52.8,421.1
+Nova Scotia,0.0,Rural,All businesses,2019,54.1,76.7,82.5,Unemployment rate,Both sexes,15 years and over,8.2,14301,1.6,1.3,0.6,49.4,352.4
+Nova Scotia,1.0,Urban,All businesses,2019,56.9,84.9,82.7,Unemployment rate,Both sexes,15 years and over,7.0,25282,1.4,1.4,0.6,53.5,534.9
+New Brunswick,1.0,Urban,All businesses,2019,61.7,95.4,79.4,Unemployment rate,Both sexes,15 years and over,6.7,17976,1.7,1.1,0.5,32.8,622.1
+Québec,0.0,Rural,All businesses,2019,38,64.7,77.2,Unemployment rate,Both sexes,15 years and over,5.5,78956,1.3,1.3,0.6,46,441.7
+Québec,1.0,Urban,All businesses,2019,60.7,68.5,83,Unemployment rate,Both sexes,15 years and over,5.0,357146,1.5,1.1,0.5,45.9,525.2
+Ontario,0.0,Rural,All businesses,2019,37,64.6,77.9,Unemployment rate,Both sexes,15 years and over,4.5,66376,1.6,1.3,0.6,48.4,514.9
+Ontario,1.0,Urban,All businesses,2019,53.2,73.6,81.2,Unemployment rate,Both sexes,15 years and over,5.7,707592,1.8,1.2,0.6,55.8,498.9
+Manitoba,0.0,Rural,All businesses,2019,-17.4,69.5,69.2,Unemployment rate,Both sexes,15 years and over,5.1,15779,2.1,1,0.5,33.2,774
+Manitoba,1.0,Urban,All businesses,2019,61.1,82.4,81.3,Unemployment rate,Both sexes,15 years and over,5.4,40501,1.8,1.1,0.5,39.1,569.7
+Saskatchewan,0.0,Rural,All businesses,2019,-35.2,56,63.7,Unemployment rate,Both sexes,15 years and over,4.5,24145,2.3,0.8,0.5,30.2,897.5
+Saskatchewan,1.0,Urban,All businesses,2019,57.3,81.1,78.9,Unemployment rate,Both sexes,15 years and over,6.0,37561,1.5,1,0.5,36,727.8
+Alberta,0.0,Rural,All businesses,2019,20.6,77.4,70.9,Unemployment rate,Both sexes,15 years and over,5.9,52748,1.6,1.1,0.5,45,553.8
+Alberta,1.0,Urban,All businesses,2019,53,80.9,78.7,Unemployment rate,Both sexes,15 years and over,7.2,215904,1.4,1.3,0.6,60.2,550.7
+British Columbia,0.0,Rural,All businesses,2019,50.4,66.9,81.6,Unemployment rate,Both sexes,15 years and over,5.2,34622,1.6,1.3,0.6,52.3,372.5
+British Columbia,1.0,Urban,All businesses,2019,56.8,73.9,82.3,Unemployment rate,Both sexes,15 years and over,4.7,298417,1.8,1.3,0.6,43.8,633.4

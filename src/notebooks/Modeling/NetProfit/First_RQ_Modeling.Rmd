@@ -1,0 +1,186 @@
+---
+title: "First_RQ_final"
+author: "Song Zhang"
+date: '2022-06-14'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+mb_3digind <- read.csv("mb_3dig_ind.csv", as.is = TRUE)
+sb_3digind <- read.csv("sb_3dig_ind.csv", as.is = TRUE)
+```
+
+```{r}
+sb_3digind <- sb_3digind[which(sb_3digind$Incorporation.status=='Incorporated'), ]
+```
+
+```{r}
+mb_3digind_rural <- mb_3digind[ which(mb_3digind$Location.indicator=='Rural'), ]
+sb_3digind_rural <- sb_3digind[ which(sb_3digind$Location.indicator=='Rural'), ]
+```
+
+```{r}
+mb_3digind_rural_data <- mb_3digind_rural[, -c(1, 2, 3, 4, 5, 6, 8,12, 13, 14)]
+sb_3digind_rural_data <- sb_3digind_rural[, -c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 16, 17, 18, 30)]
+```
+
+```{r}
+names(mb_3digind_rural_data)
+```
+
+### Correlation Matrix
+
+```{r}
+#install.packages("PerformanceAnalytics")
+library(PerformanceAnalytics)
+chart.Correlation(mb_3digind_rural_data, histogram=TRUE, pch=10)
+```
+
+```{r}
+chart.Correlation(sb_3digind_rural_data, histogram=TRUE, pch=10)
+```
+
+### Bacward selection for Medium Rural
+
+```{r}
+mydata_mb<- mb_3digind_rural_data
+mb_lm0 <- lm(Net.Profit.Loss ~ ., data=mydata_mb) 
+summary(mb_lm0)
+```
+
+```{r}
+# remove Total.equity 
+mydata_mb1<- mydata_mb[, -c(10)]
+mb_lm1 <- lm(Net.Profit.Loss ~ ., data=mydata_mb1) 
+summary(mb_lm1)
+```
+
+```{r}
+# remove Sales.of.goods.and.services...percent.of.total.revenue.
+mydata_mb2<- mydata_mb1[, -c(2)]
+mb_lm2 <- lm(Net.Profit.Loss ~ ., data=mydata_mb2) 
+summary(mb_lm2)
+```
+
+```{r}
+# remove Sales.of.goods.and.services...percent.of.total.revenue.
+mydata_mb3<- mydata_mb2[, -c(13)]
+mb_lm3 <- lm(Net.Profit.Loss ~ ., data=mydata_mb3) 
+summary(mb_lm3)
+```
+
+```{r}
+# remove Total.number.of.businesses
+mydata_mb4<- mydata_mb3[, -c(1)]
+mb_lm4 <- lm(Net.Profit.Loss ~ ., data=mydata_mb4) 
+summary(mb_lm4)
+```
+
+```{r}
+# remove Net.profit.to.equity....
+mydata_mb5<- mydata_mb4[, -c(11)]
+mb_lm5 <- lm(Net.Profit.Loss ~ ., data=mydata_mb5) 
+summary(mb_lm5)
+```
+
+```{r}
+# remove Total.current.assets
+mydata_mb6<- mydata_mb5[, -c(5)]
+mb_lm6 <- lm(Net.Profit.Loss ~ ., data=mydata_mb6) 
+summary(mb_lm6)
+```
+
+```{r}
+# remove Revenue.to.equity.ratio..times.
+mydata_mb7<- mydata_mb6[, -c(9)]
+mb_lm7 <- lm(Net.Profit.Loss ~ ., data=mydata_mb7) 
+summary(mb_lm7)
+```
+
+```{r}
+# remove Revenue.to.equity.ratio..times.
+mydata_mb8<- mydata_mb7[, -c(8)]
+mb_lm8 <- lm(Net.Profit.Loss ~ ., data=mydata_mb8) 
+summary(mb_lm8)
+```
+
+```{r}
+# remove Debt.to.equity.ratio..times. 
+mydata_mb9<- mydata_mb8[, -c(7)]
+mb_lm9 <- lm(Net.Profit.Loss ~ ., data=mydata_mb9) 
+summary(mb_lm9)
+```
+
+```{r}
+names(mydata_mb9)
+```
+
+
+
+
+
+
+
+### Bacward selection for Small Rural
+
+
+```{r}
+mydata_sb<- sb_3digind_rural_data
+sb_lm0 <- lm(Net.Profit.Loss ~ ., data=mydata_sb) 
+summary(sb_lm0)
+```
+
+```{r}
+# remove Gross.margin....
+mydata_sb1<- mydata_sb[, -c(15)]
+sb_lm1 <- lm(Net.Profit.Loss ~ ., data=mydata_sb1) 
+summary(sb_lm1)
+```
+
+```{r}
+# remove Total.liabilities 
+mydata_sb2<- mydata_sb1[, -c(8)]
+sb_lm2 <- lm(Net.Profit.Loss ~ ., data=mydata_sb2) 
+summary(sb_lm2)
+```
+
+```{r}
+# remove Revenue.to.equity.ratio..times. 
+mydata_sb3<- mydata_sb2[, -c(12)]
+sb_lm3 <- lm(Net.Profit.Loss ~ ., data=mydata_sb3) 
+summary(sb_lm3)
+```
+
+```{r}
+# remove Net.profit.to.equity....  
+mydata_sb4<- mydata_sb3[, -c(12)]
+sb_lm4 <- lm(Net.Profit.Loss ~ ., data=mydata_sb4) 
+summary(sb_lm4)
+```
+
+```{r}
+# remove Current.debt.to.equity.... 
+mydata_sb5<- mydata_sb4[, -c(11)]
+sb_lm5 <- lm(Net.Profit.Loss ~ ., data=mydata_sb5) 
+summary(sb_lm5)
+```
+
+```{r}
+# remove Debt.to.equity.ratio..times.
+mydata_sb6<- mydata_sb5[, -c(10)]
+sb_lm6 <- lm(Net.Profit.Loss ~ ., data=mydata_sb6) 
+summary(sb_lm6)
+```
+```{r}
+# remove Debt.to.equity.ratio..times.
+mydata_sb7<- mydata_sb6[, -c(1,2,7)]
+sb_lm7 <- lm(Net.Profit.Loss ~ ., data=mydata_sb7) 
+summary(sb_lm7)
+```
+```{r}
+names(mydata_sb7)
+```

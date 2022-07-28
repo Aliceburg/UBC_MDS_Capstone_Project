@@ -1,0 +1,55 @@
+,"North American Industry Classification System, NAICS - code","North American Industry Classification System, NAICS",Reference year,Net Profit/Loss,Percent of profitable businesses
+2,11,"Agriculture, forestry, fishing and hunting",2017.0,-61.3,55.2
+101,21,"Mining, quarrying, and oil and gas extraction",2017.0,46.6,76.0
+200,22,Utilities,2017.0,72.9,82.8
+299,23,Construction,2017.0,45.5,79.2
+398,31-33,Manufacturing,2017.0,40.5,75.2
+497,41,Wholesale trade,2017.0,46.6,74.9
+596,44-45,Retail trade,2017.0,35.6,73.6
+695,48-49,Transportation and warehousing,2017.0,51.3,78.0
+794,51,Information and cultural industries,2017.0,43.6,82.4
+893,53,Real estate and rental and leasing,2017.0,43.7,82.4
+992,54,"Professional, scientific and technical services",2017.0,69.8,87.6
+1091,55,Management of companies and enterprises,2017.0,291.8,87.0
+1190,56,"Administrative and support, waste management and remediation services",2017.0,53.5,83.9
+1289,61,Educational services,2017.0,34.4,82.8
+1388,62,Health care and social assistance,2017.0,108.0,93.4
+1487,71,"Arts, entertainment and recreation",2017.0,23.9,72.8
+1586,72,Accommodation and food services,2017.0,32.1,71.5
+1685,81,Other services (except public administration),2017.0,34.8,81.4
+1784,11,"Agriculture, forestry, fishing and hunting",2018.0,-77.9,53.0
+1883,21,"Mining, quarrying, and oil and gas extraction",2018.0,25.3,77.0
+1982,22,Utilities,2018.0,78.8,84.0
+2081,23,Construction,2018.0,48.1,79.8
+2180,31-33,Manufacturing,2018.0,42.7,75.5
+2279,41,Wholesale trade,2018.0,45.7,74.3
+2378,44-45,Retail trade,2018.0,34.7,73.1
+2477,48-49,Transportation and warehousing,2018.0,51.9,77.9
+2576,51,Information and cultural industries,2018.0,40.2,83.5
+2675,53,Real estate and rental and leasing,2018.0,43.4,82.1
+2774,54,"Professional, scientific and technical services",2018.0,72.7,87.8
+2873,55,Management of companies and enterprises,2018.0,291.3,88.8
+2972,56,"Administrative and support, waste management and remediation services",2018.0,56.8,84.3
+3071,61,Educational services,2018.0,40.0,84.0
+3170,62,Health care and social assistance,2018.0,110.1,93.5
+3269,71,"Arts, entertainment and recreation",2018.0,21.1,72.2
+3368,72,Accommodation and food services,2018.0,31.4,71.4
+3467,81,Other services (except public administration),2018.0,36.6,81.7
+3566,11,"Agriculture, forestry, fishing and hunting",2019.0,-89.8,51.5
+3665,21,"Mining, quarrying, and oil and gas extraction",2019.0,35.1,75.9
+3764,22,Utilities,2019.0,85.9,83.0
+3863,23,Construction,2019.0,48.4,79.3
+3962,31-33,Manufacturing,2019.0,42.0,75.4
+4061,41,Wholesale trade,2019.0,42.5,73.1
+4160,44-45,Retail trade,2019.0,35.4,72.7
+4259,48-49,Transportation and warehousing,2019.0,49.4,76.6
+4358,51,Information and cultural industries,2019.0,45.3,81.6
+4457,53,Real estate and rental and leasing,2019.0,43.3,81.8
+4556,54,"Professional, scientific and technical services",2019.0,70.4,87.8
+4655,55,Management of companies and enterprises,2019.0,280.3,87.9
+4754,56,"Administrative and support, waste management and remediation services",2019.0,54.3,84.2
+4853,61,Educational services,2019.0,40.9,84.5
+4952,62,Health care and social assistance,2019.0,108.2,93.6
+5051,71,"Arts, entertainment and recreation",2019.0,22.9,73.2
+5150,72,Accommodation and food services,2019.0,31.4,69.8
+5249,81,Other services (except public administration),2019.0,36.8,81.7

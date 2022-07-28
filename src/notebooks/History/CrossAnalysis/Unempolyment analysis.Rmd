@@ -1,0 +1,83 @@
+---
+title: "unemployment rate"
+author: "Tingwen Hua"
+date: "07/06/2022"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# load data
+small_business <- read.csv('sb_merged_unemployment_rate.csv')
+
+# linear regression model
+
+unemployment_model1 <- lm(unemployment_rate ~ Location.indicator...code+Net.Profit.Loss+Percent.of.profitable.businesses, data= small_business)
+summary(unemployment_model1)
+
+```
+
+```{r}
+unemployment_model2 <- lm(unemployment_rate ~ Location.indicator...code+Percent.of.profitable.businesses, data= small_business)
+summary(unemployment_model2)
+```
+
+```{r}
+unemployment_model3 <- lm(unemployment_rate ~ Location.indicator...code+Net.Profit.Loss, data= small_business)
+summary(unemployment_model3)
+# best so far
+```
+
+
+```{r}
+unemployment_model4 <- lm(unemployment_rate ~ Percent.of.profitable.businesses + Net.Profit.Loss, data= small_business)
+summary(unemployment_model4)
+# not good
+```
+
+```{r}
+unemployment_model5 <- lm(unemployment_rate ~ Location.indicator...code, data= small_business)
+summary(unemployment_model5)
+```
+
+```{r}
+unemployment_model6 <- lm(unemployment_rate ~ Net.Profit.Loss, data= small_business)
+summary(unemployment_model6)
+```
+
+```{r}
+unemployment_model6 <- lm(unemployment_rate ~ Net.Profit.Loss*Location.indicator...code, data= small_business)
+summary(unemployment_model6)
+
+```
+
+
+```{r}
+unemployment_model7 <- lm(unemployment_rate ~ Percent.of.profitable.businesses, data= small_business)
+summary(unemployment_model7)
+
+```
+
+# Split rural and urban
+```{r}
+# load data
+urban_business <- read.csv('sb_urban_unemployment_rate.csv')
+
+# linear regression model
+
+urban_model1 <- lm(unemployment_rate ~ Percent.of.profitable.businesses, data= urban_business)
+summary(urban_model1)
+```
+
+```{r}
+# load data
+rural_business <- read.csv('sb_rural_unemployment_rate.csv')
+
+# linear regression model
+
+rural_model1 <- lm(unemployment_rate ~ Percent.of.profitable.businesses, data= rural_business)
+summary(rural_model1)
+```
